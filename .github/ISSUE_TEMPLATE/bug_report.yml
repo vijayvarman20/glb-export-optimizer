@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible problem with GLB Export Optimizer.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. Do not upload confidential assets or private project files.
+  - type: input
+    id: addon_version
+    attributes:
+      label: Add-on version
+      description: For example, 1.1.0
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: input
+    id: blender_version
+    attributes:
+      label: Blender version
+      description: Include the full version shown in Help > About Blender.
+      placeholder: "5.0.0"
+    validations:
+      required: true
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / macOS / Linux"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps that trigger the issue.
+      placeholder: |
+        1. Select...
+        2. Run Export Optimized GLB...
+        3. Set...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message or console log
+      description: Paste relevant error text if available.
+      render: text
+    validations:
+      required: false

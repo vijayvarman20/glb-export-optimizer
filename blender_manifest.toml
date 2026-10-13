@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+id = "glb_export_optimizer"
+version = "1.1.0"
+name = "GLB Export Optimizer"
+tagline = "Optimize GLB exports with Draco compression and size comparison"
+maintainer = "Vijay Varman"
+type = "add-on"
+blender_version_min = "5.0.0"
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+tags = ["Import-Export"]
+
+[permissions]
+files = "Export GLB files and create temporary comparison files"
